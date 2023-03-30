@@ -11,6 +11,7 @@ const Countries = () => {
     }, [])
     return (
         <div>
+            <h1 className="Title">My Rest Countries App</h1>
             <h1>Hello From Rest Countries : {countries.length}</h1>
             {/* {
                 countries.map(country => <Country 
