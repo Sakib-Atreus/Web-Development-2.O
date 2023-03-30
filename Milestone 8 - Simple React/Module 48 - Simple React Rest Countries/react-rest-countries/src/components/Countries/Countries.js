@@ -11,8 +11,8 @@ const Countries = () => {
     }, [])
     return (
         <div>
-            <h1 className="Title">My Rest Countries App</h1>
-            <h1>Hello From Rest Countries : {countries.length}</h1>
+            <h1 className="Title bg-success">My Rest Countries App</h1>
+            <h2>Hello From Rest Countries : {countries.length}</h2>
             {/* {
                 countries.map(country => <Country 
                     name={country.name.common} 
