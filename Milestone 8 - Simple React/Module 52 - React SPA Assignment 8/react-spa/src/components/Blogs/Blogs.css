@@ -1,0 +1,54 @@
+.blogs-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+.blogs-container img{
+    width: 900px;
+    height: 460px;
+}
+.profile{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile img{
+    width: 80px;
+    height: 80px;
+}
+.logo-info{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+}
+.name-info{
+    text-align: left;
+    margin-left: 5px;
+}
+.pop{
+    text-align: left;
+}
+
+
+
+
+
+
+
+.bookmarks{
+    position: sticky;
+    top: 10px;
+}
+.spentTime{
+    color: #6047EC;
+    border: 1px solid #6047EC;
+    padding: 15px;
+    background-color: rgba(96, 71, 236, 0.1);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.bookmarkedList{
+    background-color: rgba(17, 17, 17, 0.05);
+    border: 1px solid #6047EC;
+    border-radius: 10px;
+}
