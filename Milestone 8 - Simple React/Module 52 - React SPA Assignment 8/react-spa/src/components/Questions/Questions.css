@@ -1,0 +1,13 @@
+.questions{
+    background-color: rgb(214, 209, 209);
+    border: 2px solid black;
+    text-align: left;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.question-div{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
