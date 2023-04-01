@@ -8,6 +8,7 @@ import Blog from '../Blog/Blog';
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
     const [booked, setBooked] = useState([]);
+    const [reads, setReads] = useState([]);
 
     useEffect( () => {
         fetch('data.json')
@@ -19,6 +20,12 @@ const Blogs = () => {
         const newBooked = [...booked, bookmark];
         setBooked(newBooked);
         console.log(blogs);
+    }
+
+    const markAsRead = ({blogread}) => {
+        const newReads = [...reads, blogread]
+        setReads(newReads);
+        // console.log(blogs[0].readTime);
     }
 
     return (
@@ -35,12 +42,12 @@ const Blogs = () => {
             </div>
             <div className='bookmarks-container'>
                 <div className='spentTime'>
-                <h3>Spent time on read : {} min</h3>
-            </div>
-            <div className='bookmarkedList'>
-                <h2>Bookmarked Blogs : {booked.length}</h2>
-                <p>{}</p>
-            </div>
+                    <h3>Spent time on read : {blogs.readTime} min</h3>
+                </div>
+                <div className='bookmarkedList'>
+                    <h2>Bookmarked Blogs : {booked.length}</h2>
+                    <p>{}</p>
+                </div>
             </div>
         </div>
     );

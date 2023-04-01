@@ -8,6 +8,12 @@ const Blog = (props) => {
     const {cover, name, title, date, readTime} = props.blog;
 
     const handleBookmarked = props.handleBookmarked;
+
+    // console.log(props);
+
+    const markAsRead = props.markAsRead;
+
+    let time = 0;
     
     return (
         <div>
@@ -32,7 +38,8 @@ const Blog = (props) => {
             </div>
             <div className='pop'>
                 <h2>{title}</h2>
-                <a href="">Mark as read</a>
+                {/* <a href="" onClick={() => markAsRead(props.blog.readTime)}>Mark as read</a> */}
+                <button onClick={() => markAsRead(props.blog.readTime)} className='bg-white text-primary text-decoration-underline'>Mark as read</button>
             </div>
         </div>
     );
