@@ -3,6 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
+import PriceList from './components/PriceLists/PriceList'
+import Dashboard from './components/Dashboard/Dashboard'
+import PhoneBar from './components/PhoneBar/PhoneBar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +14,10 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <h1 className='text-5xl text-red-500'>Hello from Tailwind</h1>
+      <PriceList></PriceList>
+      <Dashboard></Dashboard>
+      <PhoneBar></PhoneBar>
+
     </div>
   )
 }
