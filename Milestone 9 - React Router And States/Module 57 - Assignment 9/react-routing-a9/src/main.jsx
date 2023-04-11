@@ -6,17 +6,16 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Navbar from './components/Navbar/Navbar';
-import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Home></Home>,
+    loader: () => fetch('jobs.json'),
     children: [
       {
-        
+
       }
     ]
   }  
