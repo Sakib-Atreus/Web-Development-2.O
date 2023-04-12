@@ -25,7 +25,7 @@ const Job = ({job}) => {
                 {/* <button onClick="/jobsDetail" className='bg-purple-500 font-bold text-xl p-2 rounded-md text-white'>View Details</button> */}
                 <Link to="/jobsDetail"><button className='bg-purple-500 font-bold text-xl p-2 rounded-md text-white'>View Details</button></Link>
 
-                <button onClick="">Details</button>
+                {/* <button onClick="">Details</button> */}
             </div>
         </section>
     );

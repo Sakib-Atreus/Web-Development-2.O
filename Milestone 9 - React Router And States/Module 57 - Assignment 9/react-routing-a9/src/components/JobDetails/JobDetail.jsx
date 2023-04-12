@@ -1,23 +1,36 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 
-const JobDetail = () => {
+export default function JobDetail(){
+    const jobInfo = useLoaderData();
+    console.log(jobInfo);
+    return(
+        <div>
+            <p>Details</p>
+        </div>
+    )
+}
+
+// const JobDetail = () => {
+
+//     const jobInfo = useLoaderData();
+//     console.log(jobInfo);
     
-    const jobDetails = useLoaderData();
-    console.log(jobDetails);
+    // const jobDetails = useLoaderData();
+    // console.log(jobDetails);
 
-    const { jobId } = useParams();
+    // const { jobId } = useParams();
 
-    const [jobDetail, setJobDetail] = useState({});
+    // const [jobDetail, setJobDetail] = useState({});
 
-    useEffect(() => {
-        const job = jobDetails.find((job) => job.id == jobId);
-        setJobDetail(job);
-    } , [jobDetails, jobId])
+    // useEffect(() => {
+    //     const job = jobDetails.find((job) => job.id == jobId);
+    //     setJobDetail(job);
+    // } , [jobDetails, jobId])
 
-    if(jobDetail){
-        return <div>Loading...</div>
-    }
+    // if(jobDetail){
+    //     return <div>Loading...</div>
+    // }
 
     
     // const { Id } = useParams();
@@ -31,11 +44,11 @@ const JobDetail = () => {
     //     }
     // }, [match]);
 
-    return (
-        <div>
-            <h1>Hello</h1>
-        </div>
-    );
-};
+//     return (
+//         <div>
+//             <h1>Hello</h1>
+//         </div>
+//     );
+// };
 
-export default JobDetail;
+// export default JobDetail;

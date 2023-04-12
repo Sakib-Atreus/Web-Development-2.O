@@ -5,6 +5,7 @@ import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
+  useParams,
 } from "react-router-dom";
 import Home from './components/Home/Home';
 import JobDetail from './components/JobDetails/JobDetail';
@@ -24,9 +25,15 @@ const router = createBrowserRouter([
         loader: () => fetch('jobs.json'),
       },
       {
-        path: 'jobsDetail',
-        element: <JobDetail></JobDetail>,
-        loader: ({params}) => fetch("jobs.json"),
+        path: '/jobsDetail/:id',
+        // element: <JobDetail></JobDetail>,
+        // loader: ({params}) => fetch("jobs.json"),
+        loader: async({params}) => {
+          const res = await fetch('jobs.json')
+          const data = await res.json();
+          const jobD = data.find(info => info.id == params.id);
+          return data;
+        }
       },
       {
         path: 'dashboard',

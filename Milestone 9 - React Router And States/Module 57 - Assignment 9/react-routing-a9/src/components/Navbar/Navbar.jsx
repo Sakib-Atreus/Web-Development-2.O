@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <nav className='grid grid-cols-3'>
+        <nav className='grid grid-cols-3 md:grid-cols-4 sm:grid-cols-2'>
             <div>
                 <h1 className='font-bold'>CarrierHub</h1>
             </div>
 
-            <div className='flex gap-3 ms-6'>
+            <div className='flex gap-3'>
                 <p><Link to="/">Home</Link></p>
                 <p><Link to="dashboard">Dashboard</Link></p>
                 <p><Link to="appliedJobs">Applied Jobs</Link></p>

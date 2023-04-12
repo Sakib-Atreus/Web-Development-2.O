@@ -13,7 +13,7 @@ const Jobs = () => {
 
     return (
         <div>
-            <div className='grid grid-cols-2 gap-4 mb-4 mt-4'>
+            <div className='grid grid-cols-2 sm:grid-cols-1 gap-4 mb-4 mt-4'>
               {
                 jobs.slice(0, visible).map(job => <Job
                   key={job.id}
