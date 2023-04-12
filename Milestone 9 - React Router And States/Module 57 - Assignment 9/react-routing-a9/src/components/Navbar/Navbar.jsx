@@ -8,10 +8,11 @@ const Navbar = () => {
                 <h1 className='font-bold'>CarrierHub</h1>
             </div>
 
-            <div className='flex gap-4 ms-6'>
-                <p><Link to="">Home</Link></p>
-                <p><Link to="">About</Link></p>
-                <p><Link to="">blog</Link></p>
+            <div className='flex gap-3 ms-6'>
+                <p><Link to="/">Home</Link></p>
+                <p><Link to="dashboard">Dashboard</Link></p>
+                <p><Link to="appliedJobs">Applied Jobs</Link></p>
+                <p><Link to="blog">Blog</Link></p>
             </div>
 
             <div>
