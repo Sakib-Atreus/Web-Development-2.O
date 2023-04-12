@@ -13,7 +13,7 @@ const Dashboard = () => {
         { name: 'A8', value: 60 },
       ];
     return (
-        <div>
+        <div  className="flex items-center justify-center min-h-[100vh]">
             <PieChart width={400} height={400}>
                 <Pie data={data02} dataKey="value" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#8884d8" label />
             </PieChart>
